@@ -27,7 +27,10 @@ function(add_module_to_target _target _moduleName)
   add_cxx_module(${_targetedModule} ${Module_${_moduleName}_SOURCE})
   target_compile_definitions(${_targetedModule}
     PRIVATE
-    THIS_MODULES_NAME=${_targetedModule})
+    FULL_NAME_${_moduleName}=${_targetedModule})
 
   target_link_libraries(${_target} ${_targetedModule})
+  target_compile_definitions(${_target}
+    PRIVATE
+    MODULE_NAME_${_moduleName}=${_targetedModule})
 endfunction()

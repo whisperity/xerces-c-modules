@@ -42,6 +42,11 @@ set(EXTRA_DIST
 macro(add_sample_executable name)
   add_executable(${name} ${ARGN})
   target_link_libraries(${name} xerces-c)
+
+  foreach(_module IN LISTS REGISTERED_MODULES)
+    add_module_to_target(${name} ${_module})
+  endforeach()
+
   set_target_properties(${name} PROPERTIES FOLDER "Samples")
   list(APPEND sample_programs ${name})
 endmacro()

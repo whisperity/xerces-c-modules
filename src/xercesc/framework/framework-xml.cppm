@@ -1,0 +1,50 @@
+#define MODULE_EXPORT
+
+export module FULL_NAME_XercesFrameworkXML;
+
+/* Include the headers of the package. */
+
+#include "XMLAttDef.hpp"
+#include "XMLAttDefList.hpp"
+#include "XMLAttr.hpp"
+#include "XMLBuffer.hpp"
+#include "XMLBufferMgr.hpp"
+#include "XMLContentModel.hpp"
+#include "XMLDocumentHandler.hpp"
+#include "XMLDTDDescription.hpp"
+#include "XMLElementDecl.hpp"
+#include "XMLEntityDecl.hpp"
+#include "XMLEntityHandler.hpp"
+#include "XMLErrorCodes.hpp"
+#include "XMLErrorReporter.hpp"
+#include "XMLFormatter.hpp"
+#include "XMLGrammarDescription.hpp"
+#include "XMLGrammarPool.hpp"
+#include "XMLGrammarPoolImpl.hpp"
+#include "XMLNotationDecl.hpp"
+#include "XMLPScanToken.hpp"
+#include "XMLRecognizer.hpp"
+#include "XMLRefInfo.hpp"
+#include "XMLSchemaDescription.hpp"
+#include "XMLValidator.hpp"
+#include "XMLValidityCodes.hpp"
+
+/* Include the implementation files of the package. */
+
+#include "XMLAttDef.cpp"
+#include "XMLAttDefList.cpp"
+#include "XMLAttr.cpp"
+#include "XMLBuffer.cpp"
+#include "XMLBufferMgr.cpp"
+#include "XMLContentModel.cpp"
+#include "XMLDTDDescription.cpp"
+#include "XMLElementDecl.cpp"
+#include "XMLEntityDecl.cpp"
+#include "XMLFormatter.cpp"
+#include "XMLGrammarDescription.cpp"
+#include "XMLGrammarPoolImpl.cpp"
+#include "XMLNotationDecl.cpp"
+#include "XMLRecognizer.cpp"
+#include "XMLRefInfo.cpp"
+#include "XMLSchemaDescription.cpp"
+#include "XMLValidator.cpp"
