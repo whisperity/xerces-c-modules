@@ -19,7 +19,7 @@
 
 # Run "cmake" to generate the build files for your platform
 
-cmake_minimum_required(VERSION 3.2.0)
+cmake_minimum_required(VERSION 3.13.0)
 
 # Use new variable expansion policy.
 if (POLICY CMP0053)
@@ -35,6 +35,10 @@ endif(POLICY CMP0067)
 # Try C++14, then fall back to C++11 and C++98.  Used for feature tests
 # for optional features.
 set(CMAKE_CXX_STANDARD 14)
+
+# Currently there are a lot of useless warnings for implicit const casts that
+# Xerces contains.
+add_compile_options(-Wno-cast-qual)
 
 # Use folders (for IDE project grouping)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
@@ -173,6 +177,8 @@ install(
   FILES ${CMAKE_CURRENT_BINARY_DIR}/xerces-c.pc
   DESTINATION "${PKGCONFIGDIR}"
   COMPONENT "development")
+
+include(Modules.cmake)
 
 # Process subdirectories
 add_subdirectory(doc)

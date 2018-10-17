@@ -158,14 +158,24 @@ typedef XMLUInt32           UCS4Ch;
   #else
     #define DEPRECATED_DOM_EXPORT XERCES_PLATFORM_IMPORT
   #endif
+#elsif defined(MODULE_EXPORT)
+  #define XMLUTIL_EXPORT          export
+  #define XMLPARSER_EXPORT        export
+  #define SAX_EXPORT              export
+  #define SAX2_EXPORT             export
+  #define CDOM_EXPORT             export
+  #define DEPRECATED_DOM_EXPORT   export
+  #define PARSERS_EXPORT          export
+  #define VALIDATORS_EXPORT       export
+  #define XINCLUDE_EXPORT         export
 #else
-  #define XMLUTIL_EXPORT 
-  #define XMLPARSER_EXPORT 
-  #define SAX_EXPORT 
+  #define XMLUTIL_EXPORT
+  #define XMLPARSER_EXPORT
+  #define SAX_EXPORT
   #define SAX2_EXPORT
   #define CDOM_EXPORT
-  #define DEPRECATED_DOM_EXPORT 
-  #define PARSERS_EXPORT 
+  #define DEPRECATED_DOM_EXPORT
+  #define PARSERS_EXPORT
   #define VALIDATORS_EXPORT
   #define XINCLUDE_EXPORT
 #endif
