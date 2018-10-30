@@ -24,7 +24,6 @@ export module FULL_NAME_XercesFramework;
 #include "LocalFileInputSource.cpp"
 #include "MemBufFormatTarget.cpp"
 #include "MemBufInputSource.cpp"
-#include "module.cppm"
 #include "StdInInputSource.cpp"
 #include "StdOutFormatTarget.cpp"
 #include "URLInputSource.cpp"

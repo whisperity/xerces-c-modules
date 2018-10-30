@@ -68,7 +68,6 @@ export module FULL_NAME_XercesUtil;
 #include "util/XMLNetAccessor.hpp"
 #include "util/XMLUri.hpp"
 #include "util/OutOfMemoryException.hpp"
-#include "util/XercesDefs.hpp"
 #include "util/XMLEntityResolver.hpp"
 #include "util/DefaultPanicHandler.hpp"
 #include "util/XMLURL.hpp"
