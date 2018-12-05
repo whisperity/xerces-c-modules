@@ -57,6 +57,16 @@ set_target_properties(xerces-c-missing PROPERTIES FOLDER "Library")
 #		find xercesc/framework -name '*.cpp' -exec echo {} \\ ";"
 #
 
+# These files cannot be mapped to a module due to being implemented in multiple
+# places, so they stay as normal TUs.
+set(libxerces_c_HEADERS
+  xercesc/internal/XProtoType.hpp
+  xercesc/internal/Xserializable.hpp
+  xercesc/util/XMLinitializer.hpp)
+set(libxerces_c_SOURCES
+  xercesc/internal/XProtoType.cpp
+  xercesc/util/XMLInitializer.cpp)
+
 set_module(XercesDOM xercesc/dom/module.cppm)
 set_module(XercesDOMImpl xercesc/dom/impl/module.cppm)
 set_module(XercesFramework xercesc/framework/module.cppm)
