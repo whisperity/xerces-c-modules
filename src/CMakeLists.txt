@@ -458,6 +458,8 @@ include_directories(
 add_custom_target(xerces-c-headers SOURCES ${libxerces_c_HEADERS})
 set_target_properties(xerces-c-headers PROPERTIES FOLDER "Library")
 
+include(ModuleList.cmake)
+
 add_library(xerces-c
   ${libxerces_c_SOURCES}
   ${libxerces_c_RESOURCES})
