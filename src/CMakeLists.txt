@@ -61,18 +61,12 @@ set_target_properties(xerces-c-missing PROPERTIES FOLDER "Library")
 # places, so they stay as normal TUs.
 set(libxerces_c_HEADERS
   xercesc/internal/XProtoType.hpp
-  xercesc/internal/Xserializable.hpp
-  xercesc/util/XMLinitializer.hpp)
+  xercesc/internal/XSerializable.hpp
+  xercesc/util/XMLInitializer.hpp)
 set(libxerces_c_SOURCES
   xercesc/internal/XProtoType.cpp
   xercesc/util/XMLInitializer.cpp)
 
-set_module(XercesDOM xercesc/dom/module.cppm)
-set_module(XercesDOMImpl xercesc/dom/impl/module.cppm)
-set_module(XercesFramework xercesc/framework/module.cppm)
-set_module(XercesFrameworkXML xercesc/framework/framework-xml.cppm)
-set_module(XercesFrameworkPSVI xercesc/framework/psvi/module.cppm)
-set_module(XercesInternal xercesc/internal/module.cppm)
 
 set(parsers_headers
   xercesc/parsers/AbstractDOMParser.hpp
@@ -91,17 +85,6 @@ set(parsers_sources
   xercesc/parsers/SAXParser.cpp
   xercesc/parsers/XercesDOMParser.cpp
 )
-
-set_module(XercesSAX xercesc/sax/module.cppm)
-set_module(XercesSAX2 xercesc/sax2/module.cppm)
-
-set_module(XercesUtil xercesc/util-xinclude.cppm)
-set_module(XercesRegX xercesc/util/regx/module.cppm)
-
-set_module(XercesValidatorsDTD xercesc/validators/DTD/module.cppm)
-set_module(XercesValidatorsCommon xercesc/validators/common/module.cppm)
-set_module(XercesValidatorsDatatype xercesc/validators/datatype/module.cppm)
-set_module(XercesValidatorsSchema xercesc/validators/schema/module.cppm)
 
 set(icu_headers
   xercesc/util/Transcoders/ICU/ICUTransService.hpp
