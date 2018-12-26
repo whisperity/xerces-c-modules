@@ -98,15 +98,25 @@ typedef XMLUInt32           UCS4Ch;
 
 
 // ---------------------------------------------------------------------------
+// The MODULE_EXPORT flag should be defined if building C++ Modules-TS modules.
+// ---------------------------------------------------------------------------
+#if defined(MODULE_EXPORT)
+  #define MODULE_EXPORT_TAG export
+#else
+  #define MODULE_EXPORT_TAG
+#endif
+
+// ---------------------------------------------------------------------------
 // Define namespace symbols if the compiler supports it.
 // ---------------------------------------------------------------------------
 #if defined(XERCES_HAS_CPP_NAMESPACE)
-    #define XERCES_CPP_NAMESPACE_BEGIN namespace XERCES_CPP_NAMESPACE {
+    #define XERCES_CPP_NAMESPACE_BEGIN MODULE_EXPORT_TAG \
+                                       namespace XERCES_CPP_NAMESPACE {
     #define XERCES_CPP_NAMESPACE_END  }
     #define XERCES_CPP_NAMESPACE_USE using namespace XERCES_CPP_NAMESPACE;
     #define XERCES_CPP_NAMESPACE_QUALIFIER XERCES_CPP_NAMESPACE::
 
-    namespace XERCES_CPP_NAMESPACE { }
+    MODULE_EXPORT_TAG namespace XERCES_CPP_NAMESPACE { }
     namespace xercesc = XERCES_CPP_NAMESPACE;
 #else
     #define XERCES_CPP_NAMESPACE_BEGIN
@@ -158,16 +168,6 @@ typedef XMLUInt32           UCS4Ch;
   #else
     #define DEPRECATED_DOM_EXPORT XERCES_PLATFORM_IMPORT
   #endif
-#elsif defined(MODULE_EXPORT)
-  #define XMLUTIL_EXPORT          export
-  #define XMLPARSER_EXPORT        export
-  #define SAX_EXPORT              export
-  #define SAX2_EXPORT             export
-  #define CDOM_EXPORT             export
-  #define DEPRECATED_DOM_EXPORT   export
-  #define PARSERS_EXPORT          export
-  #define VALIDATORS_EXPORT       export
-  #define XINCLUDE_EXPORT         export
 #else
   #define XMLUTIL_EXPORT
   #define XMLPARSER_EXPORT
