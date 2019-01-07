@@ -28,7 +28,7 @@ XERCES_CPP_NAMESPACE_BEGIN
 
 class Locator;
 class XMLErrorReporter;
-
+class XMLException;
 
 /**
  *  This class reports schema errors

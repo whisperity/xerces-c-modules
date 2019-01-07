@@ -32,6 +32,7 @@
 //
 
 #include <xercesc/util/XercesDefs.hpp>
+#include <xercesc/util/XMLString.hpp>
 
 XERCES_CPP_NAMESPACE_BEGIN
 

@@ -39,6 +39,7 @@ class BinInputStream;
 class XMLGrammarPool;
 class XMLGrammarPoolImpl;
 class XMLStringPool;
+class PtrHasher;
 
 class XMLUTIL_EXPORT XSerializeEngine
 {

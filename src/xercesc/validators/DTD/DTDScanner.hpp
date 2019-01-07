@@ -22,6 +22,7 @@
 #if !defined(XERCESC_INCLUDE_GUARD_DTDSCANNER_HPP)
 #define XERCESC_INCLUDE_GUARD_DTDSCANNER_HPP
 
+#include <xercesc/internal/ReaderMgr.hpp>
 #include <xercesc/validators/DTD/DTDGrammar.hpp>
 #include <xercesc/validators/DTD/DTDEntityDecl.hpp>
 

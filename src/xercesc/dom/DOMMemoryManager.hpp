@@ -24,6 +24,8 @@
 
 XERCES_CPP_NAMESPACE_BEGIN
 
+class DOMNode;
+
 /**
   * The <code>DOMMemoryManager</code> interface exposes the memory allocation-related
   * functionalities of a <code>DOMDocument</code>

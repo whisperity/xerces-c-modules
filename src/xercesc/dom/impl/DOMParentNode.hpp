@@ -51,6 +51,7 @@ XERCES_CPP_NAMESPACE_BEGIN
 class DOMChildNode;
 class DOMDocument;
 class DOMNode;
+class DOMNodeImpl;
 class DOMNodeList;
 
 class CDOM_EXPORT DOMParentNode  {
