@@ -23,6 +23,7 @@
 #define XERCESC_INCLUDE_GUARD_XMLMUTEXMGR_HPP
 
 #include <xercesc/util/XMemory.hpp>
+#include <xercesc/util/XercesDefs.hpp>
 
 XERCES_CPP_NAMESPACE_BEGIN
 

@@ -22,6 +22,7 @@
 #if !defined(XERCESC_INCLUDE_GUARD_XSDERRORREPORTER_HPP)
 #define XERCESC_INCLUDE_GUARD_XSDERRORREPORTER_HPP
 
+#include <xercesc/util/PlatformUtils.hpp>
 #include <xercesc/util/XMemory.hpp>
 
 XERCES_CPP_NAMESPACE_BEGIN
