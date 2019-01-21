@@ -33,8 +33,9 @@ XERCES_CPP_NAMESPACE_BEGIN
 /**
  * Hasher for keys that are const XMLCh*.
  */
-struct StringHasher
+class StringHasher
 {
+public:
   /**
    * Returns a hash value based on the key
    *
@@ -63,8 +64,9 @@ struct StringHasher
 /**
  * Hasher for keys that are pointers.
  */
-struct PtrHasher
+class PtrHasher
 {
+public:
   /**
    * Returns a hash value based on the key
    *

@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 
+#ifndef XERCESC_UTIL_REGX_UNICHARTABLE_H
+#define XERCESC_UTIL_REGX_UNICHARTABLE_H
+
 #include <xercesc/util/XercesDefs.hpp>
 
 XERCES_CPP_NAMESPACE_BEGIN
@@ -4129,3 +4132,5 @@ const XMLByte fgUniCharsTable[0x10000] =
 
 
 XERCES_CPP_NAMESPACE_END
+
+#endif
