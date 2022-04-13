@@ -1,5 +1,0 @@
-#define MODULE_EXPORT
-
-export module FULL_NAME__src_xercesc_validators_datatype_AbstractNumericFacetValidator;
-#include "AbstractNumericFacetValidator.hpp"
-#include "AbstractNumericFacetValidator.cpp"

@@ -1,5 +1,0 @@
-#define MODULE_EXPORT
-
-export module FULL_NAME__src_xercesc_util_NetAccessors_MacOSURLAccessCF_URLAccessCFBinInputStream;
-#include "URLAccessCFBinInputStream.hpp"
-#include "URLAccessCFBinInputStream.cpp"

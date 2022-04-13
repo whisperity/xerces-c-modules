@@ -1,4 +1,0 @@
-#define MODULE_EXPORT
-
-export module FULL_NAME__src_xercesc_util_MsgLoaders_InMemory_XercesMessages_en_US;
-#include "XercesMessages_en_US.hpp"
