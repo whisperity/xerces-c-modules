@@ -1,4 +1,4 @@
 #define MODULE_EXPORT
 
 export module FULL_NAME__src_xercesc_dom_DOMDocument;
-#include "./src/xercesc/dom/DOMDocument.hpp"
+#include "DOMDocument.hpp"

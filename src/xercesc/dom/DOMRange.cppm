@@ -1,4 +1,4 @@
 #define MODULE_EXPORT
 
 export module FULL_NAME__src_xercesc_dom_DOMRange;
-#include "./src/xercesc/dom/DOMRange.hpp"
+#include "DOMRange.hpp"

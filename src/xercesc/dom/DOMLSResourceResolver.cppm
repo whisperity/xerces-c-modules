@@ -1,4 +1,4 @@
 #define MODULE_EXPORT
 
 export module FULL_NAME__src_xercesc_dom_DOMLSResourceResolver;
-#include "./src/xercesc/dom/DOMLSResourceResolver.hpp"
+#include "DOMLSResourceResolver.hpp"

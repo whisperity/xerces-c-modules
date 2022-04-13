@@ -1,4 +1,4 @@
 #define MODULE_EXPORT
 
 export module FULL_NAME__src_xercesc_sax2_SAX2XMLFilter;
-#include "./src/xercesc/sax2/SAX2XMLFilter.hpp"
+#include "SAX2XMLFilter.hpp"

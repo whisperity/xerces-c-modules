@@ -1,5 +1,5 @@
 #define MODULE_EXPORT
 
 export module FULL_NAME__src_xercesc_validators_datatype_YearDatatypeValidator;
-#include "./src/xercesc/validators/datatype/YearDatatypeValidator.hpp"
-#include "./src/xercesc/validators/datatype/YearDatatypeValidator.cpp"
+#include "YearDatatypeValidator.hpp"
+#include "YearDatatypeValidator.cpp"

@@ -1,5 +1,5 @@
 #define MODULE_EXPORT
 
 export module FULL_NAME__src_xercesc_dom_impl_DOMNamedNodeMapImpl;
-#include "./src/xercesc/dom/impl/DOMNamedNodeMapImpl.hpp"
-#include "./src/xercesc/dom/impl/DOMNamedNodeMapImpl.cpp"
+#include "DOMNamedNodeMapImpl.hpp"
+#include "DOMNamedNodeMapImpl.cpp"

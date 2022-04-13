@@ -1,4 +1,4 @@
 #define MODULE_EXPORT
 
 export module FULL_NAME__src_xercesc_framework_psvi_XSConstants;
-#include "./src/xercesc/framework/psvi/XSConstants.hpp"
+#include "XSConstants.hpp"

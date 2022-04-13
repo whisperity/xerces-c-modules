@@ -1,5 +1,5 @@
 #define MODULE_EXPORT
 
 export module FULL_NAME__src_xercesc_validators_datatype_XMLCanRepGroup;
-#include "./src/xercesc/validators/datatype/XMLCanRepGroup.hpp"
-#include "./src/xercesc/validators/datatype/XMLCanRepGroup.cpp"
+#include "XMLCanRepGroup.hpp"
+#include "XMLCanRepGroup.cpp"
